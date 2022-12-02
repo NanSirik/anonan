@@ -1,0 +1,73 @@
+body{
+  background-color: #fff;
+}
+i{
+  font-size: 2rem;
+}
+
+.text-color-grey2{
+  color: #949494;
+}
+.align-center{
+  text-align: center;
+}
+
+.bg-dark{
+  background-color: #000;
+  color:#fff;
+}
+
+.content-vertical {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+.content-vertical .box{
+min-height: 50px;
+}
+
+
+.header{
+  color:#fff;
+}
+.hightlight{
+  color:#fff;
+}
+.align-right{
+  text-align: right;
+}
+
+/* Highlight */
+.hightlight{
+  position: relative;
+  max-width:100%;
+  height:auto;
+  margin-bottom: 2em;
+}
+.hightlight p{
+  padding: 1rem;
+  position: absolute;
+  bottom:2rem;
+  left:4rem;
+  right:4rem;
+  text-align: center;
+  font-size: 2rem;
+}
+.post{
+  margin: 2rem 0;
+}
+.post .title{
+  font-size: 2rem;
+  text-transform: uppercase;
+  text-align: center;
+}
+.post .desc{
+  text-align: center;
+}
+.post a.button-secondary{
+ border:1px solid #949494;
+ padding:.5em; 
+ color:#949494;
+ text-transform: none;
+ text-decoration: none;
+}
