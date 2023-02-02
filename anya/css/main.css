@@ -58,7 +58,10 @@ a.button-secondary{
 .bg-white a, .bg-white p{
   color:var(--black100);
 }
-
+.container, .container-fulid{
+  max-width: 1024px;
+  margin: auto;
+}
 
 /*Overwrite bootrap End*/
 
