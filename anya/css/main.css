@@ -18,6 +18,7 @@
 .font-ReadexPro{
   font-family: "Readex Pro";
 }
+
 a{
   text-decoration: none;
   color:var(--white100);
@@ -47,6 +48,17 @@ a.button-secondary{
   background-color:var(--black100)!important; /*Overwrite bootrap */
   color:var(--white100);
 }
+.bg-dark a, .bg-dark p{
+  color:var(--white100);
+}
+.bg-white{
+  background-color:var(--white100)!important; /*Overwrite bootrap */
+  color:var(--black100);
+}
+.bg-white a, .bg-white p{
+  color:var(--black100);
+}
+
 
 /*Overwrite bootrap End*/
 
@@ -111,20 +123,27 @@ min-height: 50px;
 .VideoFeature{
   height:540px;
   width: 100%;
-  background: url(../images/CanonCanonEOSR5CanonRF85mmF1.png);
-  background-repeat:no-repeat;
-  background-size: auto;
-  object-fit: cover;
+  
 }
+
+.VideoFeature[data-content]{
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+  /* background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/85_1.2_50_1-50s_0_009337\ Large.png); */
+  /* background-size: 390px 540px; */
+}
+
 .VideoFeature p{
+  top: 28%;
+  left:0;
+  right:0;
   font-family: "Caveat";
   font-size:32px;
   text-transform: uppercase;
   padding: 1rem;
   position: absolute;
-  top: 28%;
   text-align: center;
   font-size: 2rem;
+  
 }
 
 /* Caption */
@@ -148,10 +167,10 @@ min-height: 50px;
 .CaptionThumbnailAlternative .frame{
   position: relative;
   height: 437px;
+  padding-top: 2em;
+  padding-left: 1em;
 }
-.CaptionThumbnailAlternative p{
-  color:var(--white100)
-}
+
 .CaptionThumbnailAlternative p.title{
   font-size: 1.8rem;
   text-transform: uppercase;
@@ -164,7 +183,7 @@ height: 350px;
 .CaptionThumbnailAlternative.imgLeft .content{
   position:absolute;
   width: 258px;
-  left:0;
+  left:1em;
   top:4em;
   margin-left: 93px;
 }
@@ -178,6 +197,6 @@ height: 350px;
 .CaptionThumbnailAlternative.imgRight .content{
   position:absolute;
   width: 258px;
-  left:0;
+  left:1em;
   top:4em;
 }
