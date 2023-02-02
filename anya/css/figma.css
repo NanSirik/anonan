@@ -1,0 +1,36 @@
+:root {
+    /* Color styles */
+  --white100: rgba(242, 242, 242, 1);
+  --black100: rgba(0, 0, 0, 1);
+  --gray---gray--a80: rgba(51, 51, 51, 0.800000011920929);
+  --gray---grey-5: rgba(217, 217, 217, 1);
+  --gray---grey10: rgba(224, 224, 224, 1);
+  --strock---grey20: rgba(226, 226, 226, 1);
+  
+  /* Text-size styles */
+  --caption--h1: 24px;
+  --sub--caption: 20px;
+  --header--h1: 20px;
+  --header--h2: 32px;
+  --body--h2: 20px;
+  --link--h2: 14px;
+  --button--h1: 14px;
+  --body--h1: 14px;
+  --location--h1: 10px;
+  --quote: 20px;
+  --body--h3: 14px;
+  --sub--menu--h1: 12px;
+  --header--h3: 24px;
+  --location--h2: 14px;
+  --copy--right: 10px;
+  --image--details: 10px;
+  --menu--h1: 24px;
+  --menu--h2: 12px;
+  --footer--h1: 12px;
+  --menu--h3: 16px;
+  --body--h4: 14px;
+  --body--h5: 12px;
+  --footer--h2: 14px;
+  --h--anyakarn: 16px;
+  }
+  
