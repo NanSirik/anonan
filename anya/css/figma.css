@@ -1,7 +1,7 @@
 :root {
     /* Color styles */
-  --white100: rgba(242, 242, 242, 1);
-  --black100: rgba(0, 0, 0, 1);
+  --white100: #E0E0E0;
+  --black100: #000;
   --gray---gray--a80: rgba(51, 51, 51, 0.800000011920929);
   --gray---grey-5: rgba(217, 217, 217, 1);
   --gray---grey10: rgba(224, 224, 224, 1);
