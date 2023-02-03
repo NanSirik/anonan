@@ -10,6 +10,12 @@
   font-family: ReadexPro;
   src: url(font/ReadexPro-VariableFont_HEXP,wght.ttf)
 }
+@font-face {
+  font-family: Inter;
+  src: url(font/Inter-VariableFont_slnt\,wght.ttf)
+}
+
+
 
 
 .font-Caveat{
@@ -57,7 +63,13 @@ a.button-secondary{
   flex-direction: row;
   align-items: flex-start;
   padding: 0px;
-  
+}
+.flex-column-16{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 64px 16px;
+  gap: 32px;
 }
 .gap-16{
   gap: 16px;
@@ -68,13 +80,7 @@ a.button-secondary{
 .gap-0{
   gap: 0;
 }
-.flex-column-16{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 64px 16px;
-  gap: 32px;
-}
+
 .text-center{
   text-align: center;
 }
@@ -170,6 +176,52 @@ i{
   height: 45px;
   width: auto;
 }
+button{
+  border: 0;
+}
+.action-menu{
+  cursor: pointer;
+}
+.action-menu:hover{
+ color: #949494;
+}
+.action-menu:focus + .menu-collapse{
+display:block;
+}
+
+.menu-collapse.none{
+display: none;
+}
+.menu-collapse{
+  display: block;
+  background-color: var(--white100);
+  gap:0px;
+  padding: 0;
+  animation: fadeIn 5s;
+}
+.menu-collapse a{
+  color: var(--black100);
+}
+.menu-collapse .list{
+  width: 100%;
+  border-bottom: 1px solid var(--strock---grey20);
+  align-items: flex-start;
+  justify-content: center;
+  padding: 12px;
+  gap: 12px;
+  flex: none;
+  order: 0;
+  align-self: stretch;
+  flex-grow: 0;-self: stretch;
+}
+.menu-collapse  .title{
+  font-family: Inter;
+  font-weight: 200;
+  width: 100%;
+  align-items: flex-start;
+  padding: 12px;
+  text-transform: uppercase;
+}
 /* footer */
 .footer{
   padding: 64px 16px;
@@ -188,7 +240,6 @@ i{
 .FeatureImage{
   position: relative;
   max-width:100%;
-  padding-bottom: 2em;
 }
 .FeatureImage img.converttobg{
   position: absolute;
@@ -201,6 +252,7 @@ i{
   object-fit: cover;
   z-index: -1;
 }
+
 .FeatureImage .Heroshot {
   height: 540px;
   display: flex;
@@ -225,6 +277,7 @@ i{
   align-items: center;
   padding: 0px;
   gap: 16px;
+  padding-bottom: 2em;
 }
 .FeatureImage .Heroshot .title {
   text-transform: uppercase;
@@ -303,7 +356,37 @@ i{
 
 /* End FeatureImage */
 
-
+/* RecImage */
+.RecImage img.img-square{
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+.RecImage .footer{
+  text-align:center;
+  font-size: 0.7rem;
+  background-color: var(--black100);
+  color: var(--white100);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+  gap: 4px;
+}
+.RecImage .footer p.ImageDetails {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 10px;
+  flex: none;
+  order: 0;
+  flex-grow: 1;
+}
+.RecImage .footer p span {
+  margin: 0 4px;
+}
 /* VideoFeature */
 .VideoFeature{
   position: relative;
